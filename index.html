@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <!-- tailwind css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-4xl my-8">Local Storage</h1>
+    </header>
+    <main>
+      <div class="w-4/5 mx-auto flex justify-center">
+        <input
+          id="input-field-key"
+          type="text"
+          placeholder="Product"
+          class="input input-bordered w-full max-w-xs mr-3"
+        />
+        <input
+          id="input-field-value"
+          type="text"
+          placeholder="Quantity"
+          class="input input-bordered w-full max-w-xs mr-3"
+        />
+
+        <button onclick="addProduct()" class="btn btn-primary">ADD</button>
+      </div>
+    </main>
+    <!-- script -->
+    <script src="./app.js"></script>
+  </body>
+</html>
